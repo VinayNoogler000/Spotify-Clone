@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title> <!--Title of the webpage-->
+
+    <!--Below <link> tag to add style in the html document-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Below <link> tag to link font_awesome.css stylesheet with this html document, for adding icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Below <Link> tag to link icon with this html document, which will be showed with the webpage title-->
+    <link rel="icon" href="./assets/logo.png">
+
+    <!-- Below <link> tags to add font styles & icons to this document from google.fonts.com-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="main"> <!--Main part of the document which is visible and accessible. -->
+        <div class="sidebar"> <!--Sidebar menu of the home webpage which will have navigation
+                section to navigate to other webpages of the website and library section to view
+            and access audio/music libraries. -->
+            <div class="nav"> <!--navigation section inside sidebar menu-->
+                <div class="nav-option" style="opacity: 1;"> <!--'home webpage' option in 'nav' section-->
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option"> <!--'search' option in 'nav' section-->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library"> <!-- library section inside sidebar menu-->
+                <div class="options"> <!--'options to access, add & show more libraries'-->
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box"> <!--boxes in the form of cards to 'create playlists
+                                         and browse podcasts' -->
+                    <div class="box"> <!--create playlist box-->
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box"> <!--browse podcasts box-->
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes </p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content"> <!--Main content of the webpage where the music/songs/audios
+                                    will be visible and accessible in the form of cards. -->
+            <div class="sticky-nav">
+                <!--nav bar which will stick to the top of the main content with options like:
+                                        'go to next page, go to previous page, explore premium, install spotify app and user icon to access profile'-->
+                <div class="sticky-nav-icons">
+                    <!--icons to the left of the sticky nav bar which are 'arrows to navigate to next & previous page'-->
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <!--options to the right of the sticky nav bar which are 'exlpore premium, install app & view profile' -->
+                    <button class="badge hide scale" style="margin-top: 0rem; margin-left:0.8rem">Explore
+                        Premium</button>
+                    <button class="badge scale" style="background-color: black; color: white; margin-top: 0rem;"><i
+                            class="fa-regular fa-circle-down" style="margin-right: 0.5rem;"></i>Install App</button>
+                    <i class="fa-regular fa-user scale"></i>
+                </div>
+            </div>
+            <div class="cards">
+                <!--'musics/songs/audio podcasts in the form of cards' in the main content of the webpage-->
+                <!-- Cards Section 1 -->
+                <h2>Recently Played</h2> <!--heading of the cards section 1-->
+                <div class="cards-container cards-container-1"> <!--cards container of 1st card's section-->
+                    <div class="card"> <!--1st card in 1st card container of 1st card's section-->
+                        <img class="card-img"
+                            src="./assets/card1img.jpeg"><!--'poster or thumbnail of library or song' in the form of card image-->
+                        <p class="card-title">Top 50 - Global</p>
+                        <!--'name of the song or library' in the form of card title-->
+                        <p class="card-text">Your daily updates of the most played tracks...</p>
+                        <!--'about song or library' in the form of card text-->
+                    </div>
+                </div>
+
+                <!-- Cards Section 2 -->
+                <h2>Trending now near you</h2> <!--heading of the cards section 2-->
+                <div class="cards-container cards-container-2"> <!--cards container of 2nd card's section-->
+                    <div class="card"> <!--1st card in card container of 2nd card's section-->
+                        <img class="card-img"
+                            src="./assets/card2img.jpeg"><!--'poster or thumbnail of library or song' in the form of card image-->
+                        <p class="card-title">Mahiye Jinna Sohna</p>
+                        <!--'name of the song or library' in the form of card title-->
+                        <p class="card-text">Darshan Raval</p><!--'about song or library' in the form of card text-->
+                    </div>
+                    <div class="card"> <!--2nd card in card container of 2nd card's section-->
+                        <img class="card-img"
+                            src="./assets/card3img.jpeg"><!--'poster or thumbnail of library or song' in the form of card image-->
+                        <p class="card-title">Mere Paas Tum Ho...</p>
+                        <!--'name of the song or library' in the form of card title-->
+                        <p class="card-text">Silent Ocean</p><!--'about song or library' in the form of card text-->
+                    </div>
+                    <div class="card"> <!--3rd card in card container of 2nd card's section-->
+                        <img class="card-img"
+                            src="./assets/card4img.jpeg"><!--'poster or thumbnail of library or song' in the form of card image-->
+                        <p class="card-title">Naa Ready (From...</p>
+                        <!--'name of the song or library' in the form of card title-->
+                        <p class="card-text">Anirudh Ravichander</p>
+                        <!--'about song or library' in the form of card text-->
+                    </div>
+                </div>
+
+                <!-- Cards Section 3 -->
+                <h2>Featured Charts</h2> <!--heading of the cards section 3-->
+                <div class="cards-container cards-container-3"> <!--cards container of 3rd card's section-->
+                    <div class="card"> <!--1st card in card container of 3rd card's section-->
+                        <img class="card-img"
+                            src="./assets/card5img.jpeg"><!--'poster or thumbnail of library or song' in the form of card image-->
+                        <p class="card-title">Top Songs - Global</p>
+                        <!--'name of the song or library' in the form of card title-->
+                        <p class="card-text">Your weekly updates of the most played tracks...</p>
+                        <!--'about song or library' in the form of card text-->
+                    </div>
+                    <div class="card"> <!--2nd card in card container of 3rd card's section-->
+                        <img class="card-img" src="./assets/card6img.jpeg">
+                        <!--'poster or thumbnail of library or song' in the form of card image-->
+                        <p class="card-title">Top Songs - India</p>
+                        <!--'name of the song or library' in the form of card title-->
+                        <p class="card-text">Your weekly updates of the most played tracks...</p>
+                        <!--'about song or library' in the form of card text-->
+                    </div>
+                    <div class="card"> <!--3rd card in card container of 3rd card's section-->
+                        <img class="card-img" src="./assets/card1img.jpeg">
+                        <!--'poster or thumbnail of library or song' in the form of card image-->
+                        <p class="card-title">Top 50 - Global</p>
+                        <!--'name of the song or library' in the form of card title-->
+                        <p class="card-text">Your weekly updates of the most played tracks...</p>
+                        <!--'about song or library' in the form of card text-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer"> <!-- Footer of the main content-->
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player"> <!-- Music player in the webpage-->
+            <div class="album">
+                <!--'album section which has information of album/audio/song with a like button' in the left side of the music player-->
+                <div class="image"> <!--album or song image-->
+                    <img src="./assets/card4img.jpeg">
+                </div>
+                <div class="info"> <!-- information about album or song-->
+                    <p class="name">Naa ready (From "Leo")</p>
+                    <p class="singer">Anirudh Ravichanderk, Thalapathy Vijay, Asal Kolaar</p>
+                </div>
+                <div class="like"> <!-- like button-->
+                    <button type="button"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            </div>
+            <div class="player"> <!--'main player which has playback controls like: play, pause, forward, backward, shuffle & loop; and playback bar with
+                                     timer(curr & end)' in the middle of the music player-->
+                <div class="player-controls"> <!--playback controls in the music player-->
+                    <img src="./assets/player_icon1.png" class="player-control-icon"> <!--shuffle icon-->
+                    <img src="./assets/player_icon2.png" class="player-control-icon"> <!--backward icon-->
+                    <img src="./assets/player_icon3.png" style="height: 2rem; opacity: 1;" class="player-control-icon">
+                    <!--play icon-->
+                    <img src="./assets/player_icon4.png" class="player-control-icon"> <!--forward icon-->
+                    <img src="./assets/player_icon5.png" class="player-control-icon"> <!--loop icon-->
+                </div>
+                <div class="playback-bar"> <!--playback bar with curr & end time of song/audio-->
+                    <span class="time curr-time">00:00</span> <!--curr time of audio-->
+                    <input type="range" min="0" max="100" value="30" step="1"
+                        class="progress-bar"><!--playback bar in the form of range type input element-->
+                    <span class="time tot-time">3:33</span> <!--end time of audio-->
+                </div>
+            </div>
+            <div class="controls">
+                <!--'other extra audio options like: add to library, lyrics, volume controls, etc' in the right part of the music player-->
+                <span class="material-symbols-outlined controls-icons">slideshow</span> <!--'now playing' option-->
+                <span class="material-symbols-outlined controls-icons">mic_external_on</span> <!--'lyrics' option-->
+                <span class="material-symbols-outlined controls-icons">menu</span><!--'music queue' option-->
+                <span class="material-symbols-outlined controls-icons" style="margin-right: 0.3rem;">volume_up</span>
+                <!--'volume' option-->
+                <input type="range" min="0" max="100" value="50" step="1" class="sound-bar"> <!--'volume silder'-->
+                <span class="material-symbols-outlined controls-icons"
+                    style="margin-left: 0.8rem;">picture_in_picture</span> <!--'picture-in-picture' option-->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
